@@ -46,14 +46,14 @@ function gravatar_setting_menu() {
     </div>
     <div class="footer_copyright_info">
         <h4>Copyright©2022. <strong><a href="https://xiaozhao233.top/">中国的小赵</a></strong>. All Right Reserved.</h4>
-        <a href="https://afdian.net/a/xiaozhao233"><img src="https://zone.forchina.ml/afdian-button-purple.png" height="100px"/></a>
+        <a href="https://afdian.net/a/xiaozhao233"><img src="https://s1.slb.icu/contact/aifadian/button-purple.png" height="100px"/></a>
     </div>
 <?php  
 }  
 
 //Gravatar 头像加速模块
 function Gravatar($avatar) {
-	$avatar = str_replace(array("0.gravatar.com","1.gravatar.com","www.gravatar.com","2.gravatar.com","secure.gravatar.com","s.gravatar.com"),get_option('gravatar_mirror_domain'),$avatar);
+	$avatar = str_replace(array("0.gravatar.com","1.gravatar.com","www.gravatar.com","2.gravatar.com","secure.gravatar.com","s.gravatar.com","cn.gravatar.com"),get_option('gravatar_mirror_domain'),$avatar);
 	return $avatar;
 }
 function Gravatar_start() {
